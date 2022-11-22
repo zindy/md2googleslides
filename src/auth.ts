@@ -52,7 +52,7 @@ export interface AuthOptions {
  *   @returns {Promise.<String>} Promise yielding the authorization code
  */
 export default class UserAuthorizer {
-  private redirectUrl = 'urn:ietf:wg:oauth:2.0:oob';
+  private redirectUrl = 'http://localhost:1/';
   private db: lowdb.LowdbSync<Credentials>;
   private clientId: string;
   private clientSecret: string;
